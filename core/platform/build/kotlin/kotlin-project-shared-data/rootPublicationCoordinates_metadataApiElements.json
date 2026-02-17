@@ -1,8 +1,0 @@
-{
-  "buildPath": ":",
-  "projectPath": ":core:platform",
-  "moduleId": {
-    "groupId": "InkSight.core",
-    "moduleId": "platform"
-  }
-}

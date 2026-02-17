@@ -1,16 +1,25 @@
 *.iml
 .gradle
-/local.properties
-/.idea
+.idea
 .DS_Store
-/build
-*/build
-/captures
+local.properties
+
+# Build outputs
+build/
+**/build/
+
+# Native
 .externalNativeBuild
 .cxx
+*.hprof
+
+# iOS
 *.xcodeproj/project.xcworkspace/xcuserdata/
 *.xcodeproj/xcuserdata/
-/iosApp/Pods/
-*.hprof
+iosApp/Pods/
+
+# Kotlin/Native
+.konan/
+
+# Logs
 *.log
-local.properties
