@@ -1,5 +1,8 @@
 package io.inksight.app.di
 
+import io.inksight.core.data.di.dataModule
+import io.inksight.core.data.di.dataPlatformModule
+import io.inksight.core.platform.di.platformModule
 import org.koin.core.KoinApplication
 import org.koin.core.context.startKoin
 
@@ -7,7 +10,10 @@ fun initKoin(platformConfig: KoinApplication.() -> Unit = {}) {
     startKoin {
         platformConfig()
         modules(
-            // Modules will be added as they are built
+            platformModule,
+            dataPlatformModule,
+            dataModule,
+            appModule,
         )
     }
 }

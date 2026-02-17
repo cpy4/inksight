@@ -1,9 +1,10 @@
 import SwiftUI
+import ComposeApp
 
 @main
 struct iOSApp: App {
     init() {
-        // Koin initialization will be added later
+        KoinInitKt.doInitKoin(platformConfig: { _ in })
     }
 
     var body: some Scene {

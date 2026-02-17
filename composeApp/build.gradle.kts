@@ -36,6 +36,7 @@ kotlin {
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
+            implementation(compose.materialIconsExtended)
             implementation(compose.ui)
             implementation(compose.components.resources)
 
@@ -54,6 +55,7 @@ kotlin {
 
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.kotlinx.serialization.json)
+            implementation(libs.kotlinx.datetime)
             implementation(libs.lifecycle.viewmodel)
 
             implementation(projects.core.domain)
