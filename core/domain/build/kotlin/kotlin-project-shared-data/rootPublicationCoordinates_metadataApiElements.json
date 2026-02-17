@@ -1,0 +1,8 @@
+{
+  "buildPath": ":",
+  "projectPath": ":core:domain",
+  "moduleId": {
+    "groupId": "InkSight.core",
+    "moduleId": "domain"
+  }
+}

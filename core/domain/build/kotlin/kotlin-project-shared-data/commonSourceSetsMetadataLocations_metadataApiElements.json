@@ -1,0 +1,8 @@
+{
+  "locationBySourceSetName": {
+    "appleMain": "/Users/cjpye/Code/Projects/inksight/core/domain/build/classes/kotlin/metadata/appleMain/klib/domain_appleMain",
+    "commonMain": "/Users/cjpye/Code/Projects/inksight/core/domain/build/classes/kotlin/metadata/commonMain",
+    "iosMain": "/Users/cjpye/Code/Projects/inksight/core/domain/build/classes/kotlin/metadata/iosMain/klib/domain_iosMain",
+    "nativeMain": "/Users/cjpye/Code/Projects/inksight/core/domain/build/classes/kotlin/metadata/nativeMain/klib/domain_nativeMain"
+  }
+}

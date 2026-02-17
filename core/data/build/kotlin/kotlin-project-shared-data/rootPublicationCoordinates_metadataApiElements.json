@@ -1,0 +1,8 @@
+{
+  "buildPath": ":",
+  "projectPath": ":core:data",
+  "moduleId": {
+    "groupId": "InkSight.core",
+    "moduleId": "data"
+  }
+}

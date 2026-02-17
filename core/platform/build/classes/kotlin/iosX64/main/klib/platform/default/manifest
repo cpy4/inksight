@@ -1,0 +1,10 @@
+abi_version=2.3.0
+builtins_platform=NATIVE
+compiler_version=2.3.10
+depends=stdlib org.jetbrains.kotlinx\:atomicfu-cinterop-interop org.jetbrains.kotlin.native.platform.posix org.jetbrains.kotlinx\:atomicfu org.jetbrains.kotlin.native.platform.darwin org.jetbrains.kotlinx\:kotlinx-coroutines-core co.touchlab\:stately-strict org.jetbrains.kotlin.native.platform.Security org.jetbrains.kotlin.native.platform.Foundation co.touchlab\:stately-concurrency co.touchlab\:stately-concurrent-collections io.insert-koin\:koin-core org.jetbrains.kotlin.native.platform.CFCGTypes org.jetbrains.kotlin.native.platform.CoreGraphics org.jetbrains.kotlin.native.platform.QuartzCore org.jetbrains.kotlin.native.platform.UIUtilities org.jetbrains.kotlin.native.platform.UIKit
+ir_signature_versions=1,2
+language_features=+MultiPlatformProjects
+metadata_version=2.3.0
+native_targets=ios_x64
+short_name=platform
+unique_name=InkSight.core\:platform

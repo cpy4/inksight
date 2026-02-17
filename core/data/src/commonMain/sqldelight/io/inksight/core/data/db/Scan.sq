@@ -1,0 +1,35 @@
+CREATE TABLE ScanEntity (
+    id TEXT NOT NULL PRIMARY KEY,
+    imagePath TEXT NOT NULL,
+    transcribedText TEXT NOT NULL DEFAULT '',
+    createdAt INTEGER NOT NULL,
+    updatedAt INTEGER NOT NULL,
+    status TEXT NOT NULL DEFAULT 'PENDING',
+    imageWidth INTEGER,
+    imageHeight INTEGER
+);
+
+getAllScans:
+SELECT * FROM ScanEntity ORDER BY createdAt DESC;
+
+getScanById:
+SELECT * FROM ScanEntity WHERE id = ?;
+
+searchScans:
+SELECT * FROM ScanEntity
+WHERE transcribedText LIKE '%' || ? || '%'
+ORDER BY createdAt DESC;
+
+insertScan:
+INSERT OR REPLACE INTO ScanEntity(id, imagePath, transcribedText, createdAt, updatedAt, status, imageWidth, imageHeight)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+
+updateScan:
+UPDATE ScanEntity SET
+    transcribedText = ?,
+    updatedAt = ?,
+    status = ?
+WHERE id = ?;
+
+deleteScan:
+DELETE FROM ScanEntity WHERE id = ?;
